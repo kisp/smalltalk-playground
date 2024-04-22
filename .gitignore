@@ -1,0 +1,4 @@
+resolv.conf
+*~
+.emacs.d/eln-cache
+.emacs.d/games

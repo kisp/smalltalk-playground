@@ -1,0 +1,8 @@
+services:
+  dev:
+    build: .
+    volumes:
+      - .:/coding
+      - ./resolv.conf:/etc/resolv.conf
+      - ./.emacs.d:/root/.emacs.d
+    command: sh -c 'trap "exit" TERM; while true; do sleep 1; done'
